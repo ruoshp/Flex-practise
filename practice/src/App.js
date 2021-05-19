@@ -1,10 +1,11 @@
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Rushabh from "./pages/rushabh";
-import Rakesh from "./pages/rakesh";
 import Nilva from "./pages/nilva";
 import Nitya from "./pages/nitya";
 import Navbar from "./navbar.js";
+import FlexExp from "./pages/rakesh/flexExp"
+import gridExp from "./pages/rakesh/gridExp"
 
 function App() {
   return (
@@ -13,10 +14,10 @@ function App() {
       <Router>
         <Switch>
           <Route path="/rushabh" component={Rushabh} />
-
-          <Route path="/rakesh" component={Rakesh} />
           <Route path="/nitya" component={Nitya} />
           <Route path="/nilva" component={Nilva} />
+          <Route path="/flexExp" component={FlexExp} />
+          <Route path="/gridExp" component={gridExp} />
         </Switch>
       </Router>
     </div>

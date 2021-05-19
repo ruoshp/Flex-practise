@@ -13,9 +13,15 @@ export default function Navbar() {
 
           <ul className="nav2">
             <li>
-              <a href="/Rakesh">Rakesh</a>
+              <div>
+                <a href="/flexExp">Rakesh flex</a>
+              </div>
             </li>
-
+            <li>
+              <div>
+                <a href="/gridExp">Rakesh grid</a>
+              </div>
+            </li>
             <li>
               <a href="/Rushabh">Rushabh</a>
             </li>
