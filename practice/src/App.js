@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Rushabh from "./pages/rushabh";
+import Rakesh from "./pages/rakesh";
+import Nilva from "./pages/nilva";
+import Nitya from "./pages/nitya";
+import Navbar from "./navbar.js";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <Router>
+        <Switch>
+          <Route path="/rushabh" component={Rushabh} />
+
+          <Route path="/rakesh" component={Rakesh} />
+          <Route path="/nitya" component={Nitya} />
+          <Route path="/nilva" component={Nilva} />
+        </Switch>
+      </Router>
     </div>
   );
 }
